@@ -170,6 +170,7 @@ h6 {
   height: 100vh;
   position: relative;
   perspective: 1000px;
+  -webkit-perspective: 1000px;
 }
 
 .page__video {
