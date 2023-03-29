@@ -186,17 +186,20 @@ h6 {
   width: calc(10 * (1vw + 1vh));
   height: calc(10 * (1vw + 1vh));
   z-index: 10;
+  will-change: transform;
   animation: rocket 20s infinite;
 }
 
 @keyframes rocket {
   from {
     transform: scale3d(1, 1, 1) rotate(10deg);
+    -webkit-transform: scale3d(1, 1, 1) rotate(10deg);
     top: 80%;
     left: 40%;
   }
   to {
     transform: scale3d(0, 0, 0.2) rotate(10deg);
+    -webkit-transform: scale3d(0, 0, 0.2) rotate(10deg);
     top: 50%;
     left: 50%;
   }
