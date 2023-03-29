@@ -188,16 +188,18 @@ h6 {
   z-index: 10;
   will-change: transform;
   animation: rocket 20s infinite;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
 }
 
 @keyframes rocket {
-  from {
+  0% {
     transform: scale3d(1, 1, 1) rotate(10deg);
     -webkit-transform: scale3d(1, 1, 1) rotate(10deg);
     top: 80%;
     left: 40%;
   }
-  to {
+  100% {
     transform: scale3d(0, 0, 0.2) rotate(10deg);
     -webkit-transform: scale3d(0, 0, 0.2) rotate(10deg);
     top: 50%;
